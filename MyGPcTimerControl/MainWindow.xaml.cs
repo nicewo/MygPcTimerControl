@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
+using System.IO.Compression;
 using System.Linq;
 using System.Net.Http;
 using System.Security.AccessControl;
@@ -164,11 +165,10 @@ namespace MyGPcTimerControl
             }
         }
 
-        private async void CheckAndUpdateFromGithub()
+        private async Task CheckAndUpdateFromGithub()
         {
             string configPath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "MyGPcTimerControl", "config.txt");
             Directory.CreateDirectory(Path.GetDirectoryName(configPath)!);
-
             if (!File.Exists(configPath))
                 File.WriteAllText(configPath, "1.zip");
 
@@ -179,50 +179,71 @@ namespace MyGPcTimerControl
                 using var client = new HttpClient();
                 string html = await client.GetStringAsync("https://github.com/nicewo/MygPcTimerControl/tree/main/build");
 
+                // build/ klasöründeki .zip dosya adlarını çek
                 var matches = Regex.Matches(html, @"href=""/nicewo/MygPcTimerControl/blob/main/build/([^""]+\.zip)""");
                 List<string> zipNames = matches.Select(m => m.Groups[1].Value).Distinct().ToList();
 
                 if (zipNames.Count > 0)
                 {
+                    // En son zip (örneğin 2.zip, 3.zip vs.)
                     string latestZip = zipNames.OrderByDescending(z => z).First();
 
                     if (!latestZip.Equals(currentVersion, StringComparison.OrdinalIgnoreCase))
                     {
-                        string rawUrl = $"https://github.com/nicewo/MygPcTimerControl/raw/main/build/{latestZip}";
-                        string localZip = Path.Combine(Path.GetTempPath(), latestZip);
-                var zipBytes = await client.GetByteArrayAsync(rawUrl);
-                await File.WriteAllBytesAsync(localZip, zipBytes);
+                        // Yeni zip indirilmeli
+                        string localDir = AppDomain.CurrentDomain.BaseDirectory;
 
-                File.WriteAllText(configPath, latestZip);
+                        // Önce eski zipleri sil
+                        foreach (var oldZip in Directory.GetFiles(localDir, "*.zip"))
+                            File.Delete(oldZip);
 
-                Process.Start("updater.exe", $"\"{System.Diagnostics.Process.GetCurrentProcess().MainModule.FileName}\" \"{localZip}\"");
-                System.Windows.Application.Current.Shutdown();
-            }
+                        // Yeni zip indir
+                        string zipUrl = $"https://github.com/nicewo/MygPcTimerControl/raw/main/build/{latestZip}";
+                        string zipPath = Path.Combine(localDir, latestZip);
+                        var data = await client.GetByteArrayAsync(zipUrl);
+                        await File.WriteAllBytesAsync(zipPath, data);
+
+                        // updater.exe'yi zip içinden çıkar
+                        using var archive = ZipFile.OpenRead(zipPath);
+                        var updaterEntry = archive.Entries.FirstOrDefault(e => e.FullName.Equals("updater.exe", StringComparison.OrdinalIgnoreCase));
+                        if (updaterEntry != null)
+                        {
+                            string updaterPath = Path.Combine(localDir, "updater.exe");
+                            updaterEntry.ExtractToFile(updaterPath, true);
+                        }
+
+                        // config güncelle
+                        File.WriteAllText(configPath, latestZip);
+
+                        // updater'ı çalıştır ve çık
+                        Process.Start(Path.Combine(localDir, "updater.exe"));
+                        System.Windows.Application.Current.Shutdown();
+                    }
                 }
-    }
+            }
             catch (Exception ex)
             {
-                Debug.WriteLine("Güncelleme kontrol hatası: " + ex.Message);
+                Debug.WriteLine("Güncelleme hatası: " + ex.Message);
             }
         }
+
+        public class DatabaseModel
+        {
+            public List<TimeRange> saat_araliklari { get; set; }
+            public EkSure ek_sure { get; set; }
+        }
+
+        public class TimeRange
+        {
+            public string basla { get; set; }
+            public string bitir { get; set; }
+        }
+
+        public class EkSure
+        {
+            public bool aktif { get; set; }
+            public int sure_dakika { get; set; }
+            public string verildigi_zaman { get; set; }
+        }
     }
-
-    public class DatabaseModel
-{
-    public List<TimeRange> saat_araliklari { get; set; }
-    public EkSure ek_sure { get; set; }
-}
-
-public class TimeRange
-{
-    public string basla { get; set; }
-    public string bitir { get; set; }
-}
-
-public class EkSure
-{
-    public bool aktif { get; set; }
-    public int sure_dakika { get; set; }
-    public string verildigi_zaman { get; set; }
-}
 }

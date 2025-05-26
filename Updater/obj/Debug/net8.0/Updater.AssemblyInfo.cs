@@ -11,15 +11,13 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("MyGPcTimerControl")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("Updater")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+23c941c51d3d81d1f9d1c6ebb69782e49b261a41")]
-[assembly: System.Reflection.AssemblyProductAttribute("MyGPcTimerControl")]
-[assembly: System.Reflection.AssemblyTitleAttribute("MyGPcTimerControl")]
+[assembly: System.Reflection.AssemblyProductAttribute("Updater")]
+[assembly: System.Reflection.AssemblyTitleAttribute("Updater")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
-[assembly: System.Runtime.Versioning.TargetPlatformAttribute("Windows7.0")]
-[assembly: System.Runtime.Versioning.SupportedOSPlatformAttribute("Windows7.0")]
 
 // MSBuild WriteCodeFragment sınıfı tarafından oluşturuldu.
 

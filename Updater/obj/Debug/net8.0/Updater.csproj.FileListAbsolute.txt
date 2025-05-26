@@ -1,0 +1,15 @@
+D:\Github\MygPcTimerControl\Updater\bin\Debug\net8.0\Updater.exe
+D:\Github\MygPcTimerControl\Updater\bin\Debug\net8.0\Updater.deps.json
+D:\Github\MygPcTimerControl\Updater\bin\Debug\net8.0\Updater.runtimeconfig.json
+D:\Github\MygPcTimerControl\Updater\bin\Debug\net8.0\Updater.dll
+D:\Github\MygPcTimerControl\Updater\bin\Debug\net8.0\Updater.pdb
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\Updater.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\Updater.AssemblyInfoInputs.cache
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\Updater.AssemblyInfo.cs
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\Updater.csproj.CoreCompileInputs.cache
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\Updater.sourcelink.json
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\Updater.dll
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\refint\Updater.dll
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\Updater.pdb
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\Updater.genruntimeconfig.cache
+D:\Github\MygPcTimerControl\Updater\obj\Debug\net8.0\ref\Updater.dll
