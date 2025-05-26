@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("MyGPcTimerControl")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2dcf409756ce3793250283f8e7606d0f82df3fc6")]
 [assembly: System.Reflection.AssemblyProductAttribute("MyGPcTimerControl")]
 [assembly: System.Reflection.AssemblyTitleAttribute("MyGPcTimerControl")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

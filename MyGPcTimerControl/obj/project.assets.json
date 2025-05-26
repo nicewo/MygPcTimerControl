@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\myusu\\OneDrive\\Masaüstü\\PcTimerControl\\MyGPcTimerControl\\MyGPcTimerControl\\MyGPcTimerControl.csproj",
+      "projectUniqueName": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\MyGPcTimerControl.csproj",
       "projectName": "MyGPcTimerControl",
-      "projectPath": "C:\\Users\\myusu\\OneDrive\\Masaüstü\\PcTimerControl\\MyGPcTimerControl\\MyGPcTimerControl\\MyGPcTimerControl.csproj",
+      "projectPath": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\MyGPcTimerControl.csproj",
       "packagesPath": "C:\\Users\\myusu\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\myusu\\OneDrive\\Masaüstü\\PcTimerControl\\MyGPcTimerControl\\MyGPcTimerControl\\obj\\",
+      "outputPath": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
