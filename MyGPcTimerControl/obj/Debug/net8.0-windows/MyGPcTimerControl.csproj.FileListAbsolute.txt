@@ -38,3 +38,10 @@ D:\Github\MygPcTimerControl\MyGPcTimerControl\obj\Debug\net8.0-windows\MyGPcTime
 D:\Github\MygPcTimerControl\MyGPcTimerControl\obj\Debug\net8.0-windows\MyGPcTimerControl.dll
 D:\Github\MygPcTimerControl\MyGPcTimerControl\obj\Debug\net8.0-windows\refint\MyGPcTimerControl.dll
 D:\Github\MygPcTimerControl\MyGPcTimerControl\obj\Debug\net8.0-windows\MyGPcTimerControl.pdb
+D:\Github\MygPcTimerControl\MyGPcTimerControl\bin\Debug\net8.0-windows\MyGPcTimerControl.exe
+D:\Github\MygPcTimerControl\MyGPcTimerControl\bin\Debug\net8.0-windows\MyGPcTimerControl.deps.json
+D:\Github\MygPcTimerControl\MyGPcTimerControl\bin\Debug\net8.0-windows\MyGPcTimerControl.runtimeconfig.json
+D:\Github\MygPcTimerControl\MyGPcTimerControl\bin\Debug\net8.0-windows\MyGPcTimerControl.dll
+D:\Github\MygPcTimerControl\MyGPcTimerControl\bin\Debug\net8.0-windows\MyGPcTimerControl.pdb
+D:\Github\MygPcTimerControl\MyGPcTimerControl\obj\Debug\net8.0-windows\MyGPcTimerControl.genruntimeconfig.cache
+D:\Github\MygPcTimerControl\MyGPcTimerControl\obj\Debug\net8.0-windows\ref\MyGPcTimerControl.dll

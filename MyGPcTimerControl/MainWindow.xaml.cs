@@ -12,6 +12,7 @@ using System.Timers;
 using System.Windows;
 using System.Windows.Forms;
 using Timer = System.Timers.Timer;
+using MyGPcTimerControl;
 
 namespace MyGPcTimerControl
 {
@@ -227,23 +228,5 @@ namespace MyGPcTimerControl
             }
         }
 
-        public class DatabaseModel
-        {
-            public List<TimeRange> saat_araliklari { get; set; }
-            public EkSure ek_sure { get; set; }
-        }
-
-        public class TimeRange
-        {
-            public string basla { get; set; }
-            public string bitir { get; set; }
-        }
-
-        public class EkSure
-        {
-            public bool aktif { get; set; }
-            public int sure_dakika { get; set; }
-            public string verildigi_zaman { get; set; }
-        }
     }
 }

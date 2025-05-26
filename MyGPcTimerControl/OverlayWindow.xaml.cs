@@ -1,4 +1,5 @@
 ﻿using System.Windows;
+using MyGPcTimerControl;
 
 namespace MyGPcTimerControl
 {
