@@ -2,39 +2,53 @@
 using System.Diagnostics;
 using System.IO;
 using System.IO.Compression;
+using System.Linq;
 using System.Threading;
 
 namespace Updater
 {
     internal class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            if (args.Length != 2)
+            string dir = AppDomain.CurrentDomain.BaseDirectory;
+            string selfExe = "updater.exe";
+
+            string zipPath = Directory.GetFiles(dir, "*.zip").FirstOrDefault();
+            if (zipPath == null)
             {
-                Console.WriteLine("Eksik argüman.");
+                Console.WriteLine("Zip bulunamadı.");
                 return;
             }
 
-            string exePath = args[0];
-            string zipPath = args[1];
-            string appDir = Path.GetDirectoryName(exePath);
-
-            Thread.Sleep(3000);
+            Thread.Sleep(3000); // Ana uygulama tamamen kapansın
 
             try
             {
-                if (File.Exists(exePath))
-                    File.Delete(exePath);
+                using var archive = ZipFile.OpenRead(zipPath);
+                foreach (var entry in archive.Entries)
+                {
+                    string fileName = Path.GetFileName(entry.FullName);
+                    if (fileName.Equals(selfExe, StringComparison.OrdinalIgnoreCase)) continue;
 
-                ZipFile.ExtractToDirectory(zipPath, appDir, true);
+                    string targetPath = Path.Combine(dir, entry.FullName);
+                    if (!string.IsNullOrEmpty(entry.Name))
+                    {
+                        Directory.CreateDirectory(Path.GetDirectoryName(targetPath)!);
+                        entry.ExtractToFile(targetPath, true);
+                    }
+                }
+
                 File.Delete(zipPath);
 
-                Process.Start(Path.Combine(appDir, Path.GetFileName(exePath)));
+                string exePath = Path.Combine(dir, "MyGPcTimerControl.exe");
+                if (File.Exists(exePath))
+                    Process.Start(exePath);
             }
             catch (Exception ex)
             {
                 Console.WriteLine("Güncelleme hatası: " + ex.Message);
+                Thread.Sleep(5000);
             }
         }
     }

@@ -3,16 +3,12 @@
   "WorkspaceRootPath": "D:\\Github\\MygPcTimerControl\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|d:\\github\\mygpctimercontrol\\mygpctimercontrol\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|solutionrelative:mygpctimercontrol\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|d:\\github\\mygpctimercontrol\\mygpctimercontrol\\version.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|solutionrelative:mygpctimercontrol\\version.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|d:\\github\\mygpctimercontrol\\mygpctimercontrol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|solutionrelative:mygpctimercontrol\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|d:\\github\\mygpctimercontrol\\mygpctimercontrol\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|solutionrelative:mygpctimercontrol\\models.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{45004D86-6740-4A26-B628-AF6759838DD0}|MyGPcTimerControl\\MyGPcTimerControl.csproj|d:\\github\\mygpctimercontrol\\mygpctimercontrol\\overlaywindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -54,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -62,20 +58,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Models.cs",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\Models.cs",
               "RelativeDocumentMoniker": "MyGPcTimerControl\\Models.cs",
               "ToolTip": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\Models.cs",
               "RelativeToolTip": "MyGPcTimerControl\\Models.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-26T20:00:04.994Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\Updater\\Program.cs",
               "RelativeDocumentMoniker": "Updater\\Program.cs",
@@ -88,20 +84,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "version.json",
-              "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\version.json",
-              "RelativeDocumentMoniker": "MyGPcTimerControl\\version.json",
-              "ToolTip": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\version.json",
-              "RelativeToolTip": "MyGPcTimerControl\\version.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-26T19:24:06.76Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 7,
               "Title": "App.xaml.cs",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\App.xaml.cs",
               "RelativeDocumentMoniker": "MyGPcTimerControl\\App.xaml.cs",
@@ -113,7 +96,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "MyGPcTimerControl\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\MainWindow.xaml.cs",
+              "RelativeToolTip": "MyGPcTimerControl\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAJwAAAAAAAAAAAAmwK8AAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-26T18:15:15.804Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "OverlayWindow.xaml.cs",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\OverlayWindow.xaml.cs",
               "RelativeDocumentMoniker": "MyGPcTimerControl\\OverlayWindow.xaml.cs",
@@ -126,7 +122,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "CountdownWindow.xaml.cs",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\CountdownWindow.xaml.cs",
               "RelativeDocumentMoniker": "MyGPcTimerControl\\CountdownWindow.xaml.cs",
@@ -138,7 +134,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 5,
               "Title": "OverlayWindow.xaml",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\OverlayWindow.xaml",
               "RelativeDocumentMoniker": "MyGPcTimerControl\\OverlayWindow.xaml",
@@ -149,20 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\MainWindow.xaml.cs",
-              "RelativeDocumentMoniker": "MyGPcTimerControl\\MainWindow.xaml.cs",
-              "ToolTip": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\MainWindow.xaml.cs",
-              "RelativeToolTip": "MyGPcTimerControl\\MainWindow.xaml.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-26T18:15:15.804Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 8,
               "Title": "CountdownWindow.xaml",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\CountdownWindow.xaml",
               "RelativeDocumentMoniker": "MyGPcTimerControl\\CountdownWindow.xaml",
@@ -173,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "App.xaml",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\App.xaml",
               "RelativeDocumentMoniker": "MyGPcTimerControl\\App.xaml",
@@ -184,7 +167,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 6,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "D:\\Github\\MygPcTimerControl\\MyGPcTimerControl\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MyGPcTimerControl\\MainWindow.xaml",
