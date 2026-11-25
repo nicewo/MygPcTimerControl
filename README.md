@@ -1,3 +1,11 @@
+<div align="center">
+  <a href="https://myusufgultekin.web.app/"><img src="./assets/myg-project-banner.svg" alt="MYG PC TIMER CONTROL — MYG Tech" width="100%"></a>
+  <p><img src="https://img.shields.io/badge/.NET-8.0-512BD4?style=for-the-badge&logo=dotnet&logoColor=white" alt=".NET 8"> <img src="https://img.shields.io/badge/WPF-DESKTOP-0078D4?style=for-the-badge&logo=windows&logoColor=white" alt="WPF"> <img src="https://img.shields.io/badge/WINDOWS-x64-2563EB?style=for-the-badge&logo=windows&logoColor=white" alt="Windows"></p>
+  <p><a href="https://myusufgultekin.web.app/">MYG TECH</a> · <a href="https://github.com/nicewo">GitHub Profile</a></p>
+</div>
+
+---
+
 # MyG PC Timer Control
 
 <p align="center">
